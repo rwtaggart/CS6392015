@@ -22,7 +22,12 @@ public class MainActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Button smsButton = (Button)getView().findViewById(R.id.sms_button);
+        //Inflate Fragment View First!!!
+        View fragmentView = inflater.inflate(R.layout.fragment_main, container, false);
+        if (fragmentView == null)
+            return fragmentView;
+
+        Button smsButton = (Button)fragmentView.findViewById(R.id.sms_button);
         if (smsButton != null)
             smsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -34,7 +39,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        Button phoneButton = (Button)getView().findViewById(R.id.phone_button);
+        Button phoneButton = (Button)fragmentView.findViewById(R.id.phone_button);
         if (phoneButton != null)
             phoneButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -45,7 +50,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        Button webButton = (Button)getView().findViewById(R.id.web_button);
+        Button webButton = (Button)fragmentView.findViewById(R.id.web_button);
         if (webButton != null)
             webButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -55,7 +60,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        Button mapsButton = (Button)getView().findViewById(R.id.map_button);
+        Button mapsButton = (Button)fragmentView.findViewById(R.id.map_button);
         if (mapsButton != null)
             mapsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -67,7 +72,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        Button shareButton = (Button)getView().findViewById(R.id.share_button);
+        Button shareButton = (Button)fragmentView.findViewById(R.id.share_button);
         if (shareButton != null)
             shareButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -80,7 +85,7 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        Button newActButton = (Button)getView().findViewById(R.id.nact_button);
+        Button newActButton = (Button)fragmentView.findViewById(R.id.nact_button);
         if (newActButton != null)
             newActButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -90,6 +95,6 @@ public class MainActivityFragment extends Fragment {
                 }
             });
 
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        return fragmentView;
     }
 }
