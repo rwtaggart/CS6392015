@@ -2,4 +2,8 @@
     <string name="app_name">RichardTaggartMidterm</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="converter_items">
+        <item>ToFrancs</item>
+        <item>ToDollars</item>
+    </string-array>
 </resources>
