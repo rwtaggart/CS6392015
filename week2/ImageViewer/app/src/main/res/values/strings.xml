@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ImageViewer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="caption_title">Christmas Tree Story</string>
+    <string name="tree_buggy_caption">Once, there was a tree. It wanted to learn how to drive.</string>
+    <string name="tree_sports_car_caption">
+        Others tried to follow it. So many even, that the DMV offered to give licences to trees.
+    </string>
+    <string name="tree_air_caption">Yet, Some flew by air.</string>
+    <string name="tree_truck_caption">Some traveled by land.</string>
+    <string name="tree_train_caption">Other\'s traveled by train.</string>
+    <string name="tree_rows_caption">Trees lined up just to learn how to drive.</string>
+    <string name="tree_boat_caption">Some trees traveled by sea.</string>
+    <string name="tree_driving_caption">
+        Finally, all the trees got their licences, and can drive as
+        much as they please. As long as they follow the speed limit. THE END.
+    </string>
+
+</resources>
